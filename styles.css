@@ -149,3 +149,58 @@ p::selection{
 p::after{
     content: "..."
 }
+
+/* responsive styles */
+@media screen and (max-width: 1000px){
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 700px){
+    header{
+        padding: 12px;
+    }
+    header h1{
+        font-size: 0.75em;
+        border: 0.5em solid white;
+    }
+    .banner .welcome h2{
+        font-size: 20px;
+    }
+    nav li{
+        font-size: 15px;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+@media screen and (max-width: 400px){
+    header{
+        position: relative;
+    }    
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 12px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    nav{
+        top: 0;
+    }
+    nav li{
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+}
